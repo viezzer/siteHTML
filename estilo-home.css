@@ -1,0 +1,128 @@
+.grid-container {
+    display: grid;
+    grid-template:
+    'cabecalho'
+    'conteudo'
+    'rodape';
+    grid-template-rows: 69px auto auto;
+    margin:0;
+}
+
+html {
+    height: 100%;
+}
+body {
+    font-family: 'CNN Sans Display',sans-serif;
+    height: 100%;
+}
+
+.cabecalho {
+    grid-area: cabecalho;
+    top: 0;
+    z-index: 99999;
+    position: fixed;
+    background-color: #000;
+    border-bottom: 1px solid var(--clr-cnn-grey-1);
+    height: 69px;
+    width: 100%;
+    left: 0;
+}
+.cabecalho_menu {
+    gap: 40px;
+    height: 69px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.cabecalho_itens_centrais {
+    position: relative;
+    height: 69px;
+    display: flex;
+    gap: 22px;
+    align-items: center;
+}
+.cabecalho_itens_centrais  a {
+    border-bottom: 4px solid transparent;
+    padding: 23px 10px;
+    color: #fff;
+    transition: .5s ease;
+    font-weight: 400;
+    font-size: 14px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.cabecalho_itens_centrais a:hover {
+    border-bottom: 4px solid red;
+}
+.cabecalho_itens_centrais li {
+    display: list-item;
+}
+.cabecalho_links {
+    color: white;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 22px;
+    align-items: center;
+}
+.cabecalho_actions {
+    gap: 12px;
+    position: relative;
+    width: 64px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+}
+.lupa {
+    width: 28px;
+    height: 24px;
+    border-right: 1px solid #e6e6e6;
+    padding-top: 5px;
+    position: absolute;
+    z-index: 5;
+    display: block;
+    margin-top: 0em;
+}
+.menu_user {
+    position: relative;
+    right: -40px;
+    scale: .8;
+    display: block;
+}
+.navcontainer {
+    display: flex;
+    align-items: center;
+    max-width: 1352px!important;
+    height: 69px;
+    justify-content: space-between;
+    position: relative;
+    margin: 0 auto;
+    padding: 0 16px;
+    width: 100%!important;
+}
+.conteudo {
+    grid-area: conteudo;
+    background-color: white;
+}
+.rodape {
+    grid-area: rodape;
+    padding: 36px 0;
+    overflow-x: hidden;
+    background: #0f0f0f;
+    left:0;
+}
+.footer__top {
+    max-width: 1248px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 66px 174px auto;
+    grid-template-areas:
+        "a b c"
+        "a d c"
+        "a e c"
+        "a f c"
+        "a g c";
+    gap: 0 40px;
+}
+
