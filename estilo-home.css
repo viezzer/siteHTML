@@ -1,3 +1,6 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
 .grid-container {
     display: grid;
     grid-template:
@@ -14,25 +17,70 @@ html {
 body {
     font-family: 'CNN Sans Display',sans-serif;
     height: 100%;
+    background-color: #fff;
+    margin:0;
+    /* display: block; */
 }
 
 .cabecalho {
     grid-area: cabecalho;
+}
+.main_header {
+    background-color: #000;
+    position: fixed;
     top: 0;
     z-index: 99999;
-    position: fixed;
-    background-color: #000;
-    border-bottom: 1px solid var(--clr-cnn-grey-1);
+    border-bottom: 1px solid #fff;
     height: 69px;
     width: 100%;
     left: 0;
+    padding-left: 24px;
+    padding-right: 24px;
 }
-.cabecalho_menu {
+
+@media (min-width: 992px) and (max-width: 1320px) {
+    .main__header {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+.navcontainer {
+    display: flex;
+    align-items: center;
+    max-width: 1352px!important;
+    height: 69px;
+    justify-content: space-between;
+    position: relative;
+    margin: 0 auto;
+    padding: 0 16px;
+    width: 100%!important;
+}
+@media (min-width: 992px) {
+    .navcontainer {
+        max-width: 1280px!important;
+    }
+}
+.header_menu {
     gap: 40px;
     height: 69px;
     position: relative;
     display: flex;
     align-items: center;
+}
+.menu_hamburguer {
+    display: flex;
+    flex-direction: column;
+    gap:3.5px;
+    z-index:4;
+    width:16px;
+    height: 12px;;
+}
+.menu_hamburguer span {
+    background-color: #fff;
+    display:block;
+    height: 1.5px;
+    width:16px;
+    border-radius: 5px;
 }
 .cabecalho_itens_centrais {
     position: relative;
@@ -90,17 +138,7 @@ body {
     scale: .8;
     display: block;
 }
-.navcontainer {
-    display: flex;
-    align-items: center;
-    max-width: 1352px!important;
-    height: 69px;
-    justify-content: space-between;
-    position: relative;
-    margin: 0 auto;
-    padding: 0 16px;
-    width: 100%!important;
-}
+
 .conteudo {
     grid-area: conteudo;
     background-color: white;
