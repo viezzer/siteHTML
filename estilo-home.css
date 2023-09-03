@@ -15,7 +15,7 @@ html {
     height: 100%;
 }
 body {
-    font-family: 'CNN Sans Display',sans-serif;
+    font-family: 'CNN Sans Display', sans-serif;
     height: 100%;
     background-color: #fff;
     margin:0;
@@ -168,7 +168,7 @@ li {
         box-shadow: 0 0 0 0 rgba(204,169,44, 0);
     }
   }
-.cabecalho_actions {
+.header_actions {
     gap: 12px;
     position: relative;
     width: 64px;
@@ -176,21 +176,40 @@ li {
     display: flex;
     align-items: center;
 }
-.lupa {
-    width: 28px;
+.header_actions .form {
+    width: 24px;
     height: 24px;
     border-right: 1px solid #e6e6e6;
-    padding-top: 5px;
+    padding-right: 32px;
     position: absolute;
     z-index: 5;
     display: block;
     margin-top: 0em;
 }
+.header_actions button {
+    background: transparent;
+    border: 0;
+    padding: 0;
+    position: absolute;
+    top: -2px;
+    transition: all ease 1s;
+    cursor: pointer;
+    overflow: visible;
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
 .menu_user {
     position: relative;
-    right: -40px;
-    scale: .8;
-    display: block;
+    right: -43px;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+}
+.google-logo {
+    scale:.43;
 }
 
 .conteudo {
