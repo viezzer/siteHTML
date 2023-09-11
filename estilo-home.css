@@ -215,6 +215,8 @@ li {
 .conteudo {
     grid-area: conteudo;
     background-color: white;
+    position: relative;
+
 }
 .rodape {
     grid-area: rodape;
@@ -222,6 +224,7 @@ li {
     overflow-x: hidden;
     background: #0f0f0f;
     left:0;
+    position: relative;
 }
 .footer__top {
     max-width: 1248px;
