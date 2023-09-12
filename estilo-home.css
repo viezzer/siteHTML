@@ -353,7 +353,7 @@ figure::after{
     background: #0f0f0f;
     left:0;
     position: relative;
-    height:330px;
+    min-height:420px;
 }
 .footer_top {
     max-width: 1248px;
@@ -471,4 +471,23 @@ figure::after{
     top: 0;
     left: 50%;
     transform: translateX(-50%);
+}
+.footer_bottom::after {
+    top:2px;
+}
+.footer_bottom ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 10px 0 14px 0;
+    list-style: none;
+}
+.footer_bottom li {
+    color:#fff;
+}
+.footer_copyright {
+    color: #8C8C8C;
+    font-size: 12px;
+    padding-top: 6px;
+    margin-top: 40px;
 }
