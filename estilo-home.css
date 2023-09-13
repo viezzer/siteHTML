@@ -6,6 +6,7 @@
     grid-template:
     'cabecalho'
     'conteudo'
+    'sec2'
     'rodape';
     grid-template-rows: 69px auto auto;
     margin:0;
@@ -287,7 +288,21 @@ li {
     font-weight: 700;
     position:relative;
 }
-figure {
+.block_news_thumb {
+    margin: 0;
+}
+.block_news_thumb img {
+    width: 314px;
+    height: 185px;
+    margin-top: -16px;
+    width: 314px;
+    height: 185px;
+    border-radius: 4px;
+}
+figcaption {
+    display:block;
+}
+.block_news_thumb1 {
     top: 0;
     left: 0;
     right: 0;
@@ -295,7 +310,7 @@ figure {
     position: absolute;
     margin:0;
 }
-figure img {
+.block_news_thumb1 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -305,7 +320,7 @@ figure img {
     overflow: clip;
     max-width: 100%;
 }
-figure::after{
+.block_news_thumb1::after{
     top: 0;
     left: 0;
     right: 0;
@@ -347,6 +362,74 @@ figure::after{
         background-image: url(https://www.cnnbrasil.com.br/wp-content/plugins/master_homepage/assets/img/arrow-related.svg);
         background-color: #c00;
 }
+.sec2 {
+    grid-area: sec2;
+    margin-top: 32px;
+    padding-top: 32px;
+    border-top: 1px solid #E6E6E6;
+    position: relative;
+    margin: 0 auto;
+    width:100%;
+}
+form {
+    width:550px;
+    margin:0px auto;
+    display: flex;
+    flex-direction: column;
+
+}
+input {
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 5px;
+    margin: 5px 0px;
+    font-weight: 700;
+}
+.block_title {
+    color: #fff;
+    font-size: 14px;
+    padding: 4px 20px;
+    border-radius: 4px;
+    line-height: 22.5px;
+    display: inline-block;
+    background-color: #C00;
+    font-weight: 700px;
+    margin: 0 0 12px 0;
+}
+.block_news_list {
+    column-count: 2;
+    column-gap: 32px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+
+.block_news_item {
+    border: none;
+    padding-bottom: 20px;
+    margin-bottom: 0px;
+}
+.block_news_item>a {
+    position: relative;
+}
+.block_news_item>a.has-thumb::before {
+    border-radius: 2px 0;
+}
+.block--headlines .block_news_item > a::before {
+    width: 32px;
+    height: 16px;
+}
+.block_news_item>a::before {
+    content: "";
+    width: 24px;
+    height: 12px;
+    display: block;
+    position: relative;
+    border-radius: 2px;
+    background-color: #C00;
+}
 .rodape {
     grid-area: rodape;
     padding: 36px 0;
@@ -355,6 +438,7 @@ figure::after{
     left:0;
     position: relative;
     min-height:420px;
+    margin-top: 50px;
 }
 .footer_top {
     max-width: 1248px;
@@ -491,4 +575,11 @@ figure::after{
     font-size: 12px;
     padding-top: 6px;
     margin-top: 40px;
+}
+.container {
+    padding:0px;
+    position: relative;
+    margin: 0 auto;
+    width: 100%!important;
+    max-width: 1320px!important;
 }
