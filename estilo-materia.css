@@ -165,6 +165,61 @@ img {
 .aside{
     margin-top: 48px;
     grid-area: aside;
-    background-color: burlywood;
     margin-left: 3%;
+}
+
+.mais_lidas_top{
+    display: flex;
+    margin-left: 40px;
+
+}
+
+.mais_lidas_top h2{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    display: flex;
+    color: #262626;
+    align-items: center;
+    font-style: normal;
+    position: relative;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin: 0;
+    margin-left: 8px;
+}
+
+.mais_lidas_lista li {
+    counter-increment: li;
+    display: grid;
+    grid-template-columns: 30px 4px auto;
+    list-style: none;
+}
+
+.mais_lidas_item {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #4D4D4D;
+    margin-top: 16px;
+}
+
+.mais_lidas_item::before {
+    color: #a81d1d;
+    line-height: 18px;
+    font-size: 14px;
+    font-weight: 500;
+    content: counter(li) " ";
+    grid-column: 1 / 2;
+    text-align: center;
+}
+
+.mais_lidas_item h3 {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+    margin: 0;
+    grid-column: 3 / 4;
 }
