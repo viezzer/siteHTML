@@ -385,6 +385,11 @@ input {
     margin: 5px 0px;
     font-weight: 700;
 }
+#enviar {
+    background-color: #C00;
+    opacity: 80%;
+    border-color: #000;
+}
 .block_title {
     color: #fff;
     font-size: 14px;
