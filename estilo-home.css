@@ -376,19 +376,29 @@ form {
     margin:0px auto;
     display: flex;
     flex-direction: column;
+    align-items: center;
 
 }
 input {
     border-radius: 10px;
     font-size: 20px;
     padding: 5px;
-    margin: 5px 0px;
+    margin: 5px;
     font-weight: 700;
+    border-style: none;
+    border: 1px solid black;
+    font-size: 18px;
+    font-weight: 400;
+    min-width: 400px;
+    
 }
 #enviar {
     background-color: #C00;
-    opacity: 80%;
+    opacity: 90%;
     border-color: #000;
+    color:#fff;
+    font-weight: 500;
+    border: none;
 }
 .block_title {
     color: #fff;
